@@ -1,0 +1,4 @@
+
+https://data.sfgov.org/api/views/vw6y-z8j6/rows.csv?query=select * where `requested_datetime` >= '2017-02-01' AND `requested_datetime` < '2019-11-09' AND (`service_name` = 'Street and Sidewalk Cleaning') AND (`service_subtype` = 'City_garbage_can_overflowing')&read_from_nbe=true&version=2.1&accessType=DOWNLOAD
+
+https://data.sfgov.org/api/views/vw6y-z8j6/rows.csv?query=%0A++++++++select+%2A+where+%60requested_datetime%60+%3E%3D+%272020-05-01%27%0A++++++++AND+%28%60service_name%60+%3D+%27Street+and+Sidewalk+Cleaning%27%29%0A++++++++AND+%28%60service_subtype%60+%3D+%27City_garbage_can_overflowing%27%29

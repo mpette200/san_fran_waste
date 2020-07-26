@@ -1,0 +1,21 @@
+﻿Column Name,Description,Type
+CaseID,The unique ID of the service request created.,Number
+Opened,The date and time when the service request was made,Date & Time
+Closed,The date and time when the service request was closed,Date & Time
+Updated,"The date and time when the service request was last modified. For requests with status=closed, this will be the date the request was closed",Date & Time
+Status,A single-word indicator of the current state of the service request. (Note: GeoReport V2 only permits ‘open’ and ‘closed’),Plain Text
+Status Notes,Explanation of why status was changed to current state or more details on current status than conveyed with status alone ,Plain Text
+Responsible Agency,The agency responsible for fulfilling or otherwise addressing the service request.,Plain Text
+Category,The human readable name of the service request type,Plain Text
+Request Type,The human readable name of the service request subtype,Plain Text
+Request Details,The human readable name of the service request details,Plain Text
+Address,Human readable address or description of location,Plain Text
+Street,Primary Street of the associated address. Parks may have a park name instead of a street name. Requests not associated with an address will be blank.,Plain Text
+Supervisor District,San Francisco Supervisor District as defined in 'Supervisor Districts as of April 2012',Number
+Neighborhood,San Francisco Neighborhood as defined in 'SF Find Neighborhoods',Plain Text
+Police District,San Francisco Police District as defined in 'Current Police Districts',Plain Text
+Latitude,"Latitude of the location, using the WGS84 projection",Number
+Longitude,"Longitude of the location, using the WGS84 projection",Number
+Point,Combination of Latitude and Longitude for Socrata native maps,Location
+Source,"Mechanism or path by which the service request was received; typically ‘Phone’, ‘Text/SMS’, ‘Website’, ‘Mobile App’, ‘Twitter’, etc but terms may vary by system.",Plain Text
+Media URL,"A URL to media associated with the request, e.g. an image.",Website URL
