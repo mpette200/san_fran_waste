@@ -1,15 +1,15 @@
-## Machine Learning - Garbage Cleaning in San Francisco
+## Machine Learning - Street Cleaning in San Francisco
 
-This project attempts to apply machine learning to a data set containing details collected when garbage receptacles have been reported as overflowing. The data is publicly available from (https://datasf.org).
+This project attempts to apply machine learning to a data set of street and sidewalk cleaning reports from the city of San Francisco. The data is publicly available from (https://datasf.org).
 
 Possible business cases might be:
-- Is it possible to predict locations and times when receptacles get full? This could help in assigning crews.
+- Is it possible to predict locations and times when cleanup is needed? This could help in assigning crews.
 - Some reports turn out to be false, might be useful if this could be predicted.
 - Do weather conditions have any effect? (Extra project to compare with weather data)
 
 
 ## Columns in the Data Set
-Description of the columns in the data set is in the table below. Basic exploratory data analysis (EDA) using Sweetviz can be found in (https://mpette200.github.io/san_fran_waste/sweetviz/SWEETVIZ_REPORT.html).
+Description of the columns in the data set is in the table below. Basic exploratory data analysis (EDA) using Sweetviz can be found in (https://mpette200.github.io/san_fran_waste/sweetviz/SWEETVIZ_REPORT_L.html).
 
 
 |    | Column Name         | Description                                                                                                                                                       | Type        |
