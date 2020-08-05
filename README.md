@@ -1,12 +1,26 @@
-## Machine Learning - Street Cleaning in San Francisco
+## Machine Learning and Devops - Street Cleaning in San Francisco
+
+Learning objectives of this is to take a machine learning model, then publish it to a website using the devops principles of continuous integration and continuous delivery. Skills to develop in: Pandas, Scikit-Learn, Plotly, Dash, Docker, and a CI/CD service eg. Terraform.
 
 This project attempts to apply machine learning to a data set of street and sidewalk cleaning reports from the city of San Francisco. The data is publicly available from (https://datasf.org).
 
 Possible business cases might be:
 - Is it possible to predict locations and times when cleanup is needed? This could help in assigning crews.
+- Is it possible to estimate time to complete a request? This could provide useful information for people using the service.
 - Some reports turn out to be false, might be useful if this could be predicted.
-- Do weather conditions have any effect? (Extra project to compare with weather data)
+- Do weather conditions have any effect? (Extra project to compare with weather data).
 
+## Technical Objectives and Software Libraries
+- Build a machine learning model using scikit-learn and pandas.
+- Create a web interface people can view using plotly dash.
+- Setup continuous integration:
+  - Configure CI server, eg. Terraform.
+  - Trigger automatic tests when Github repo updated.
+- Setup continuous delivery pipeline:
+  - Define infrastructure as code.
+  - Trigger automatic build when Github repo updated and tests passed.
+  - Automatically build Docker container with necessary dependencies.
+  - Push to hosting server, eg. Heroku.
 
 ## Columns in the Data Set
 Description of the columns in the data set is in the table below. Basic exploratory data analysis (EDA) using Sweetviz can be found in (https://mpette200.github.io/san_fran_waste/sweetviz/SWEETVIZ_REPORT_L.html).
