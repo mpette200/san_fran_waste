@@ -1,6 +1,6 @@
 ## Machine Learning and Devops - Street Cleaning in San Francisco
 
-Learning objectives of this is to take a machine learning model, then publish it to a website using the devops principles of continuous integration and continuous delivery. Skills to develop in: Pandas, Scikit-Learn, Plotly, Dash, Docker, and a CI/CD service eg. Terraform.
+Learning objectives of this is to take a machine learning model, then publish it to a website using the devops principles of continuous integration and continuous delivery. Skills to develop in: Pandas, Scikit-Learn, Plotly, Dash, Docker, and a CI/CD service eg. circleci.
 
 This project attempts to apply machine learning to a data set of street and sidewalk cleaning reports from the city of San Francisco. The data is publicly available from (https://datasf.org).
 
@@ -14,7 +14,7 @@ Possible business cases might be:
 - Build a machine learning model using scikit-learn and pandas.
 - Create a web interface people can view using plotly dash.
 - Setup continuous integration:
-  - Configure CI server, eg. Terraform.
+  - Configure CI server, eg. circleci.
   - Trigger automatic tests when Github repo updated.
 - Setup continuous delivery pipeline:
   - Define infrastructure as code.

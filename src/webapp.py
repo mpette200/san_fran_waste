@@ -28,16 +28,8 @@ app.layout = html.Div(children=[
 
     html.Div(id='container-table'),
 
-    # html.Div([
-    #     generate_table(df.reset_index(drop=False))
-    # ]),
-
     html.Div(id='container-graph'),
 
-    # dcc.Graph(
-    #     id='example-graph',
-    #     figure=fig
-    # )
 ])
 
 
@@ -57,8 +49,7 @@ def gen_html_table(df):
 @app.callback(
     [Output('container-table', 'children'),
      Output('container-graph', 'children')],
-    [Input('btn-run', 'n_clicks')]
-)
+    [Input('btn-run', 'n_clicks')])
 def do_figures(n_clicks):
     if not n_clicks:
         return None, None
