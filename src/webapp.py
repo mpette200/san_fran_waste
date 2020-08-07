@@ -4,13 +4,13 @@ import dash
 import dash_core_components as dcc
 import dash_html_components as html
 import plotly.express as px
-
+from flask import Flask
 from dash.dependencies import Input, Output
 
 import pandas as pd
 
-
-app = dash.Dash(__name__)
+server = Flask(__name__)
+app = dash.Dash(__name__, server=server)
 
 markdown_text = '''
 # SF City Prediction
