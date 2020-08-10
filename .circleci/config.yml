@@ -14,6 +14,7 @@ jobs:
             flake8 src/ --output-file=test_logs/flake8/report.txt --exit-zero
             flake8_junit test_logs/flake8/report.txt \
               test_logs/flake8/report.xml
+            flake8 src/
       - store_test_results:
           path: test_logs/flake8
       - store_artifacts:
