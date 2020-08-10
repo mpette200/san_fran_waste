@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testsuite errors="1" failures="0" name="flake8" tests="1" time="1"><testcase name="src/webapp.py"><failure col="1" file="src/webapp.py" line="11" message="W293 blank line contains whitespace" type="flake8 W293">11:1 W293 blank line contains whitespace</failure></testcase></testsuite>

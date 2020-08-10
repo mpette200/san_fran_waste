@@ -4,6 +4,7 @@ dash-html-components==1.0.1
 dash-renderer==1.1.2
 dash-table==4.4.1
 flake8==3.7.9
+flake8-junit-report==2.1.0
 Flask==1.1.2
 Flask-Compress==1.5.0
 holidays==0.9.11
