@@ -8,7 +8,7 @@ from flask import Flask
 from dash.dependencies import Input, Output
 
 import pandas as pd
-  
+
 server = Flask(__name__)
 app = dash.Dash(__name__, server=server)
 
