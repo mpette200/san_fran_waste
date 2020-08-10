@@ -15,6 +15,6 @@ jobs:
             flake8_junit test_logs/flake8/report.txt \
                 test_logs/flake8/report.xml
       - store_test_results:
-          path: test_logs/flake8
+          path: test_logs
       - store_artifacts:
           path: test_logs/flake8
