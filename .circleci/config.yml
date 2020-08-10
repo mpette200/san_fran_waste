@@ -6,7 +6,7 @@ jobs:
     steps:
       - checkout # check out the code in the project directory
       - run:
-          name: Flake8 tests
+          name: Flake8 Code Quality
           command: |
             pip install flake8 flake8-junit-report
             mkdir test_logs
@@ -19,3 +19,14 @@ jobs:
           path: test_logs/flake8
       - store_artifacts:
           path: test_logs/flake8
+      - run:
+          name: Pytest Unit Tests
+          command: |
+            mkdir test_logs/pytest
+            pytest --import-mode=prepend \
+              --junit-xml=test_logs/pytest/report.xml \
+              --verbose > test_logs/pytest/report.txt
+      - store_test_results:
+          path: test_logs/pytest
+      - store_artifacts:
+          path: test_logs/pytest
