@@ -12,8 +12,7 @@ jobs:
             mkdir test_logs
             mkdir test_logs/flake8
             flake8 src/ --output-file=test_logs/flake8/report.txt \
-            ; flake8_junit test_logs/flake8/report.txt \
-                test_logs/flake8/report.xml
+            ; cat test_logs/flake8/report.txt
       - store_test_results:
           path: test_logs/flake8
       - store_artifacts:
